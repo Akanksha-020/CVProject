@@ -1,0 +1,20 @@
+# Python cache and virtual environment
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+
+# Model artifacts
+models/*.joblib
+!models/.gitkeep
+
+# Data artifacts
+data/processed/*
+!data/processed/.gitkeep
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
