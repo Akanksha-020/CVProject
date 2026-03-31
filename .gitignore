@@ -13,6 +13,17 @@ models/*.joblib
 # Data artifacts
 data/processed/*
 !data/processed/.gitkeep
+data/raw/*
+!data/raw/happy/
+!data/raw/sad/
+!data/raw/angry/
+data/raw/happy/*
+!data/raw/happy/.gitkeep
+data/raw/sad/*
+!data/raw/sad/.gitkeep
+data/raw/angry/*
+!data/raw/angry/.gitkeep
+data/external/
 
 # OS/editor files
 .DS_Store
