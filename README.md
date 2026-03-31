@@ -149,32 +149,7 @@ You should see:
 - predicted emotion + confidence for single image
 - webcam window with face box and emotion label overlay
 
-## GitHub Upload Policy (Important)
-For submission, upload source code and documentation only.
 
-Do upload:
-- source code files
-- requirements.txt
-- README.md
-- folder placeholders (.gitkeep)
-
-Do not upload:
-- raw dataset files in data/raw
-- external downloaded data in data/external
-- trained model binaries (unless explicitly asked by evaluator)
-- zipped dataset archives
-
-If dataset files were already tracked by git, run once:
-
-```powershell
-git rm -r --cached data/raw
-git rm -r --cached data/external
-git add .
-git commit -m "Remove dataset files from git tracking"
-git push
-```
-
-If you want to share data, use a link in README (Kaggle/Drive/Release), not repository history.
 
 ## Expected Output
 - Training metrics in terminal (accuracy and class-wise report)
@@ -188,8 +163,3 @@ If you want to share data, use a link in README (Kaggle/Drive/Release), not repo
 - Webcam not opening: try `--camera 1` or close apps using camera
 - Low accuracy: increase data size and class balance
 
-## GitHub Submission Checklist
-- Push all source files and commit history
-- Keep trained model optional (you can regenerate with `train` command)
-- Keep dataset out of repository history
-- Ensure README explains setup and usage clearly
